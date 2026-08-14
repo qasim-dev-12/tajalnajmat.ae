@@ -444,6 +444,8 @@ gtag("config", "GT-NS8CKTG9");
 .taj-cta-whatsapp{background:#25D366;color:#fff;animation:taj-sway-left 1s ease-in-out infinite}
 .taj-cta-call{background:#6B9B37;color:#fff;animation:taj-sway-right 1s ease-in-out infinite}
 .taj-cta-btn:hover{transform:scale(1.08);box-shadow:0 10px 26px rgba(0,0,0,.28);animation-play-state:paused}
+.taj-floating-mobile-cta{display:none}
+@media (max-width:768px){.taj-floating-mobile-cta{display:flex;position:fixed;left:0;right:0;bottom:14px;justify-content:center;gap:12px;z-index:99999;pointer-events:none}.taj-floating-mobile-cta .taj-cta-btn{pointer-events:auto;padding:12px 18px;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.35)}}
 @keyframes taj-sway-left{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}
 @keyframes taj-sway-right{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
 .uagb-icon-list__source-wrap{transition:transform .3s ease}
@@ -499,7 +501,7 @@ gtag("config", "GT-NS8CKTG9");
 				<div class="ast-builder-layout-element ast-flex site-header-focus-item ast-header-button-1" data-section="section-hb-button-1">
 			<div class="ast-builder-button-wrap ast-builder-button-size-"><a class="ast-custom-button-link" href="https://tajalnajmat.ae/contact/" target="_self" role="button" aria-label="Explore Our Offerings">
 				<div class="ast-custom-button">Explore Our Offerings</div>
-			</a><a class="menu-link" href="https://tajalnajmat.ae/contact/" target="_self">Explore Our Offerings</a></div>		</div>
+			</a></div>		</div>
 									</div>
 												</div>
 					</div>
@@ -549,31 +551,34 @@ gtag("config", "GT-NS8CKTG9");
 			</div>
 		</header><!-- #masthead -->
 <style id="taj-about-styles">
-.taj-about-section{padding:70px 20px;max-width:1200px;margin:0 auto}
+.taj-about-section{padding:70px 20px;background:#fff}
+.taj-inner{max-width:1160px;margin:0 auto}
 .taj-about-section.tight{padding-top:0}
 .taj-eyebrow{color:#567F2C;font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:14px;margin-bottom:10px}
 .taj-h2{font-size:2.4rem;font-weight:800;color:#202420;margin:0 0 20px;line-height:1.2}
 .taj-h2 .accent{color:#567F2C}
-.taj-about-hero{background:linear-gradient(rgba(16,22,12,.72),rgba(16,22,12,.72)),url('.../assets/images/vecteezy_different-kinds-of-food-bowls-filled-with-various-types-of-food_29562424-1024x574.jpg') center/cover no-repeat;color:#fff;padding:120px 20px 80px;text-align:center}
+.taj-about-hero{background:linear-gradient(rgba(16,22,12,.72),rgba(16,22,12,.72)),url('../assets/images/vecteezy_different-kinds-of-food-bowls-filled-with-various-types-of-food_29562424-1024x574.jpg') center/cover no-repeat;color:#fff;padding:170px 20px 80px;text-align:center;position:relative;z-index:0}
+@media (max-width:1200px){.taj-about-hero{padding-top:210px}}
 .taj-about-hero p.taj-eyebrow{color:#a7d17a}
 .taj-about-hero h1{font-size:3rem;font-weight:800;margin:10px 0 24px}
 .taj-about-hero p{max-width:900px;margin:0 auto;font-size:1.15rem;line-height:1.7}
 .taj-two-col{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
 .taj-two-col img{width:100%;border-radius:16px}
 .taj-about-section p{line-height:1.8;color:#333;margin-bottom:16px}
-.taj-vision-mission{display:grid;grid-template-columns:1fr 1fr;gap:40px;background:#F3F7EC}
+.taj-vision-mission{background:#F3F7EC}
+.taj-vision-mission .taj-inner{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .taj-vm-card h3{color:#567F2C;font-size:1.6rem;margin-bottom:14px}
 .taj-brand-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
 .taj-brand-card{background:#10160C;border-radius:14px;overflow:hidden;text-align:center;padding-bottom:18px}
-.taj-brand-card img{width:100%;display:block}
+.taj-brand-card img{width:100%;height:240px;object-fit:cover;display:block}
 .taj-brand-card h4{color:#fff;margin-top:14px;font-size:1.2rem}
 .taj-invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:30px}
 .taj-invest-card .num{font-size:2rem;font-weight:800;color:#567F2C}
 .taj-invest-card h3{font-size:1.2rem;margin:10px 0}
-.taj-cta-final{background:linear-gradient(rgba(16,22,12,.75),rgba(16,22,12,.75)),url('.../assets/images/spices_900x600.jpg') center/cover no-repeat;color:#fff;text-align:center;padding:90px 20px}
+.taj-cta-final{background:linear-gradient(rgba(16,22,12,.75),rgba(16,22,12,.75)),url('../assets/images/spices_900x600.jpg') center/cover no-repeat;color:#fff;text-align:center;padding:90px 20px}
 .taj-cta-final h2{color:#fff;font-size:2.4rem}
 .taj-cta-final p{max-width:800px;margin:0 auto 30px;font-size:1.1rem;line-height:1.7}
-@media (max-width:820px){.taj-two-col,.taj-vision-mission,.taj-brand-grid,.taj-invest-grid{grid-template-columns:1fr}}
+@media (max-width:820px){.taj-two-col,.taj-vision-mission .taj-inner,.taj-brand-grid,.taj-invest-grid{grid-template-columns:1fr}}
 </style>
 
 <section class="taj-about-hero">
@@ -582,7 +587,7 @@ gtag("config", "GT-NS8CKTG9");
 <p>At Taj Al Najmat Foodstuff Trading LLC, we are proud to be one of the trusted food suppliers in Dubai, specializing in the export, wholesale, and distribution of premium agro food products. With over a decade of industry experience, we have built a strong reputation for delivering exceptional quality, reliable service, and innovative food supply solutions to businesses across the UAE, GCC, and international markets.</p>
 </section>
 
-<section class="taj-about-section">
+<section class="taj-about-section"><div class="taj-inner">
 <div class="taj-two-col">
 <div>
 <p class="taj-eyebrow">Welcome to Taj Al Najmat</p>
@@ -591,18 +596,18 @@ gtag("config", "GT-NS8CKTG9");
 <p>With a commitment to excellence, we supply wholesalers, retailers, supermarkets, restaurants, hotels, and distributors across the UAE, GCC, and international markets. Our focus on consistent quality, competitive pricing, and dependable service makes Taj Al Najmat a preferred partner for businesses seeking reliable food supply solutions.</p>
 <a class="taj-cta-btn taj-cta-call" style="margin-top:10px" href="./contact/">Contact Us</a>
 </div>
-<img src=".../assets/images/logo.png" alt="Taj Al Najmat logo" loading="lazy">
+<img src="../assets/images/logo.png" alt="Taj Al Najmat logo" loading="lazy">
 </div>
-</section>
+</div></section>
 
-<section class="taj-about-section" style="background:#F3F7EC">
+<section class="taj-about-section" style="background:#F3F7EC"><div class="taj-inner">
 <p class="taj-eyebrow">Our Journey Begins</p>
 <h2 class="taj-h2">Discover Our Journey as <span class="accent">Trusted Food Suppliers in Dubai</span></h2>
 <p>Since 2016, <strong>Taj Al Najmat for Foodstuff Trading Co. LLC</strong>, a proud member of <strong>GSY International Groups</strong>, has grown into one of the trusted food suppliers in Dubai, serving businesses across the UAE and international markets. Headquartered in Dubai, UAE, we have successfully expanded our presence to Canada, the European Union, the United Kingdom, Qatar, Singapore, Hong Kong, and Lithuania, with upcoming expansion plans for the United States, Australia, and New Zealand.</p>
 <p>Our commitment to quality, reliability, and customer satisfaction has made us a preferred partner for wholesalers, retailers, supermarkets, restaurants, and distributors. From premium Basmati rice and edible oils to sugar, spices, pulses, and other essential food products, we deliver exceptional quality, authenticity, and consistency to meet the evolving needs of customers worldwide.</p>
-</section>
+</div></section>
 
-<section class="taj-about-section taj-vision-mission">
+<section class="taj-about-section taj-vision-mission"><div class="taj-inner">
 <div class="taj-vm-card">
 <h3>Our Vision</h3>
 <p>To become one of the most trusted food suppliers in Dubai and a globally recognized foodstuff trading company, renowned for excellence, integrity, innovation, and sustainable growth. We strive to deliver premium-quality food products while expanding our presence across the UAE, GCC, and international markets.</p>
@@ -611,9 +616,9 @@ gtag("config", "GT-NS8CKTG9");
 <h3>Our Mission</h3>
 <p>As one of the leading food suppliers in Dubai, our mission is to provide reliable, high-quality, and competitively priced food products through exceptional wholesale, distribution, and export services. We are committed to building long-term partnerships, exceeding customer expectations, and contributing to global food security with consistency, quality, and trust.</p>
 </div>
-</section>
+</div></section>
 
-<section class="taj-about-section">
+<section class="taj-about-section"><div class="taj-inner">
 <div class="taj-two-col">
 <div>
 <p class="taj-eyebrow">Empowering Success Together</p>
@@ -621,43 +626,43 @@ gtag("config", "GT-NS8CKTG9");
 <p><strong>Taj Al Najmat for Foodstuff Trading Co. LLC</strong> is a proud member of <strong>GSY International Groups</strong>, a globally recognized organization with a strong presence in the international agro-food industry. As the parent company, GSY International Groups is a leading exporter of premium agro food products, serving customers across the UAE, GCC, Europe, North America, and other global markets.</p>
 <p>Backed by the expertise, global network, and industry experience of GSY International Groups, Taj Al Najmat continues to strengthen its position as one of the trusted food suppliers in Dubai, delivering high-quality food products, reliable wholesale solutions, and exceptional customer service to businesses worldwide.</p>
 </div>
-<img src=".../assets/images/ChatGPT-Image-Jul-8-2026-03_16_49-PM-1024x683.png" alt="GSY International Groups" loading="lazy">
+<img src="../assets/images/spices_900x600.jpg" alt="GSY International Groups" loading="lazy" style="border-radius:16px;object-fit:cover;height:100%">
 </div>
-</section>
+</div></section>
 
-<section class="taj-about-section" style="background:#10160C;color:#fff">
+<section class="taj-about-section" style="background:#10160C;color:#fff"><div class="taj-inner">
 <h2 class="taj-h2" style="color:#fff;text-align:center">Our Brand</h2>
 <div class="taj-brand-grid">
-<div class="taj-brand-card"><img src=".../assets/images/logo.png" alt="Taj Al Najmat"><h4>Taj Al Najmat</h4></div>
-<div class="taj-brand-card"><img src=".../assets/images/logo.png" alt="Haramain"><h4>Haramain</h4></div>
-<div class="taj-brand-card"><img src=".../assets/images/logo.png" alt="Chef Crew"><h4>Chef Crew</h4></div>
+<div class="taj-brand-card"><img src="../assets/images/logo.png" alt="Taj Al Najmat"><h4>Taj Al Najmat</h4></div>
+<div class="taj-brand-card"><img src="../assets/images/istockphoto-175596297-612x612-1.jpg" alt="Haramain"><h4>Haramain</h4></div>
+<div class="taj-brand-card"><img src="../assets/images/istockphoto-658447720-612x612-1.jpg" alt="Chef Crew"><h4>Chef Crew</h4></div>
 </div>
-</section>
+</div></section>
 
-<section class="taj-about-section" style="background:#F3F7EC">
+<section class="taj-about-section" style="background:#F3F7EC"><div class="taj-inner">
 <p class="taj-eyebrow">Meet Our Experts</p>
 <h2 class="taj-h2">Sustainability &amp; <span class="accent">Quality Assurance</span></h2>
 <p><strong>Commitment to Sustainability by Trusted Food Suppliers in Dubai</strong></p>
 <p>At Taj Al Najmat for Foodstuff Trading Co. LLC, sustainability is at the heart of our business. As one of the trusted food suppliers in Dubai, we are committed to responsible sourcing, ethical trading, and environmentally conscious practices. From selecting reliable suppliers to optimizing packaging and logistics, we continuously work to minimize our environmental footprint while delivering premium-quality food products to customers across the UAE and global markets.</p>
 <p><strong>Quality Assurance</strong></p>
 <p>Quality is the foundation of everything we do. We implement rigorous quality control procedures throughout our sourcing, storage, packaging, and distribution processes to ensure every product meets international food safety and quality standards. Through comprehensive supplier evaluations, regular audits, and strict compliance checks, we guarantee consistency and excellence in every shipment.</p>
-</section>
+</div></section>
 
-<section class="taj-about-section">
+<section class="taj-about-section"><div class="taj-inner">
 <h2 class="taj-h2">Investor Relations</h2>
 <p><strong>Investment Opportunities with Trusted Food Suppliers in Dubai</strong></p>
 <p><strong>Taj Al Najmat for Foodstuff Trading Co. LLC</strong> welcomes strategic investors and business partners to be part of our continued growth in the global FMCG and foodstuff trading industry. As one of the trusted food suppliers in Dubai and a proud member of GSY International Groups, we have established a strong foundation through quality products, reliable supply chains, and an expanding international presence.</p>
 <p>Our proven business model, commitment to excellence, and long-term growth strategy create attractive opportunities for investors seeking sustainable value in the food trading sector. Together, we aim to strengthen our global footprint, expand into new markets, and deliver lasting value for our partners.</p>
-</section>
+</div></section>
 
-<section class="taj-about-section" style="background:#F3F7EC">
+<section class="taj-about-section" style="background:#F3F7EC"><div class="taj-inner">
 <h2 class="taj-h2" style="text-align:center">Why Invest with Taj Al Najmat</h2>
 <div class="taj-invest-grid">
 <div class="taj-invest-card"><div class="num">01</div><h3>Steady Returns</h3><p>Our strong global network of customers, suppliers, and distribution partners enables us to maintain consistent business growth and stable revenue streams. Backed by years of industry expertise, we provide investors with opportunities built on long-term sustainability and operational excellence.</p></div>
 <div class="taj-invest-card"><div class="num">02</div><h3>Halal Investment Plans</h3><p>We offer investment opportunities that adhere to Shariah-compliant principles, ensuring ethical, transparent, and responsible business practices. Our investment model is designed to create value while maintaining integrity and compliance with Islamic financial principles.</p></div>
 <div class="taj-invest-card"><div class="num">03</div><h3>Proven Track Record</h3><p>Since 2016, Taj Al Najmat for Foodstuff Trading Co. LLC, a proud member of GSY International Groups, has earned a reputation for reliability, quality, and consistent business performance. Our successful expansion into international markets and history of delivering sustainable growth make us a trusted choice for investors seeking long-term opportunities in the FMCG and foodstuff trading industry.</p></div>
 </div>
-</section>
+</div></section>
 
 <section class="taj-cta-final">
 <h2>Get In Touch Today</h2>
@@ -868,4 +873,5 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl504995'},{'dcenter':'p3'},{'cp_id':'9875838'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src="../assets/js/tccl.min.js"></script>
 
 
+<div class="taj-floating-mobile-cta"><a class="taj-cta-btn taj-cta-whatsapp" href="https://wa.me/971559549922" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.945c0 2.104.549 4.16 1.595 5.976L0 24l6.223-1.634a11.9 11.9 0 005.819 1.482h.005c6.581 0 11.941-5.36 11.944-11.945a11.87 11.87 0 00-3.471-8.454zM12.047 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.981.999-3.648-.235-.374a9.86 9.86 0 01-1.51-5.238c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.863-9.886 9.863z"/></svg>WhatsApp</a><a class="taj-cta-btn taj-cta-call" href="tel:+971559549922" aria-label="Call us"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02z"/></svg>Call Us</a></div>
 </body></html>
